@@ -23,7 +23,6 @@ jobs:
     - uses: ncipollo/release-action@v1
       with:
         artifacts: x86_64_linux.bin
-        token: ${{ secrets.GITHUB_TOKEN }}
         allowUpdates: true
         draft: true
         replacesArtifacts: false
