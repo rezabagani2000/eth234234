@@ -18,11 +18,12 @@ jobs:
 
     - name: "Build"
       run: |
-        nvcc src/main.cu -o x86_64_linux.bin -O3 -Xptxas -v -Xcompiler -static-libgcc -Xcompiler -static-libstdc++ -gencode arch=compute_52,code=compute_52
+        nvcc src/main.cu -o x86_64_linux.bin -O3 -Xptxas -v -Xcompiler -static-libgcc -Xcompiler -static-libstdc++ -gencode arch=compute_75,code=compute_75
 
     - uses: ncipollo/release-action@v1
       with:
         artifacts: x86_64_linux.bin
+        token: ${{ secrets.TTT }}
         allowUpdates: true
         draft: true
         replacesArtifacts: false
