@@ -3,7 +3,7 @@ name: Build2
 on:
   push:
     tags:
-      - "*"
+      - "x86_64_windows"
 
 jobs:
   x86_64_windows:
