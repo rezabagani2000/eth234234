@@ -3,7 +3,7 @@ name: Build2
 on:
   push:
     branches:
-      - "x86_64_windows"
+      - x86_64_windows
 
 jobs:
   x86_64_windows:
