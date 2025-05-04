@@ -2,7 +2,7 @@ name: Build2
 
 on:
   push:
-    branches:
+    tags:
       - main
 
 jobs:
